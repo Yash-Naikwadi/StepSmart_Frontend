@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StepSmart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="white-logo"></div>
+        <div class="menu-button">☰</div>
+        <ul id="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>    
+
+    <section class="hero" id="home">
+      <div class="intro">
+        <h1 id="intro-head"><span>Step</span> into Comfort & Style</h1>
+        <p id="intro-p">
+          Welcome to <span>StepSmart</span>, where style meets comfort. We offer
+          a curated selection of footwear designed to keep you on your feet all
+          day long. Our commitment to quality and innovative design ensures that
+          every step you take is a step in the right direction.
+        </p>
+        <div class="features-main">
+          <div class="features"><p>Premium materials</p></div>
+          <div class="features">
+            <p>Sustainable and eco-friendly production</p>
+          </div>
+          <div class="features"><p>Innovative comfort technologies</p></div>
+          <div class="features">
+            <p>Unique design elements inspired by the latest fashion trends</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2 id="pro-head"><span>Our</span> Products</h2>
+      <div class="categories">
+        <button class="category-button" onclick="filterProducts('mens')">
+          Men's
+        </button>
+        <button class="category-button" onclick="filterProducts('womens')">
+          Women's
+        </button>
+        <button class="category-button" onclick="filterProducts('kids')">
+          Kids'
+        </button>
+        <button class="category-button" onclick="filterProducts('sports')">
+          Sports
+        </button>
+      </div>
+
+      <div class="product-list">
+        <div class="product mens">
+          <div class="img"></div>
+          <h3>Men's Classic Shoe</h3>
+          <p>Rs. 799.99</p>
+          <p>Premium leather and timeless design.</p>
+          <p class="explore">Explore more</p>
+        </div>
+        <div class="product womens">
+          <div class="img"></div>
+          <h3>Women's Elegant Heel</h3>
+          <p>Rs. 899.99</p>
+          <p>Comfortable and stylish for any occasion.</p>
+          <p class="explore">Explore more</p>
+        </div>
+        <div class="product kids">
+          <div class="img"></div>
+          <h3>Kids' Fun Sneakers</h3>
+          <p>Rs. 499.99</p>
+          <p>Colorful and durable for active kids.</p>
+          <p class="explore">Explore more</p>
+        </div>
+        <div class="product sports">
+          <div class="img"></div>
+          <h3>Sports Running Shoe</h3>
+          <p>Rs. 999.99</p>
+          <p>Designed for maximum performance.</p>
+          <p class="explore">Explore more</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 id="about-head">About <span>Us</span></h2>
+
+      <div class="company-history">
+        <div class="hist-img"></div>
+        <div class="hist-content">
+          <h3>Company History</h3>
+          <p>
+            Founded in <span>2004</span>, <span>StepSmart</span> has been
+            dedicated to crafting high-quality footwear that combines style and
+            comfort. Over the years, we have grown from a small local shop to a
+            renowned brand recognized for our commitment to excellence and
+            innovation in the footwear industry.
+          </p>
+          <p>
+            Our mission is to create footwear that not only meets the highest
+            standards of quality and comfort but also aligns with the latest
+            fashion trends. We strive to provide our customers with shoes that
+            they love to wear every day.
+          </p>
+        </div>
+      </div>
+
+      <div class="values-vision">
+        <div class="value">
+          <h3>Values</h3>
+          <ul>
+            <li>
+              <strong>Quality</strong>: We use only the finest materials and
+              craftsmanship.
+            </li>
+            <li>
+              <strong>Sustainability</strong>: We are committed to eco-friendly
+              practices and reducing our environmental footprint.
+            </li>
+            <li>
+              <strong>Customer Satisfaction</strong>: Our customers are at the
+              heart of everything we do, and we aim to exceed their
+              expectations.
+            </li>
+            <li>
+              <strong>Innovation</strong>: We continually strive to innovate and
+              improve our products.
+            </li>
+          </ul>
+        </div>
+        <div class="value">
+          <h3>Vision</h3>
+          <p>
+            Our vision is to become a global leader in the footwear industry,
+            known for our unparalleled quality, innovative designs, and
+            commitment to sustainability. We aim to expand our reach while
+            maintaining our dedication to excellence and customer satisfaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2 id="blog-head">Blog<span>/News</span></h2>
+
+      <div class="blog-articles">
+        <article class="blog-post">
+          <div class="blog-img" id="blog1"></div>
+          <div class="blog-content">
+            <h3>Latest Trend: Chunky Sneakers</h3>
+            <p>
+              Discover why chunky sneakers are taking the fashion world by storm
+              and how you can incorporate them into your wardrobe.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
+        <article class="blog-post">
+          <div class="blog-img" id="blog2"></div>
+          <div class="blog-content">
+            <h3>Styling Tips: How to Wear Ankle Boots</h3>
+            <p>
+              Learn different ways to style ankle boots for various occasions,
+              from casual outings to formal events.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
+        <article class="blog-post">
+          <div class="blog-img" id="blog3"></div>
+          <div class="blog-content">
+            <h3>Company News: New Summer Collection Launch</h3>
+            <p>
+              Get an inside look at our latest summer collection, featuring
+              vibrant colors and trendy designs perfect for the season.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 id="contact-head">Contact <span>Us</span></h2>
+
+      <div class="contact">
+        <div class="contact-form contact-same">
+          <h3>Get in Touch</h3>
+          <form action="#" method="post">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+            <br />
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+            <br />
+
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Enter Your Message"
+              required
+            ></textarea>
+            <br />
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info contact-same">
+          <h3>Contact Information</h3>
+          <p>
+            <i class="fa-solid fa-address-book"></i> 123 Shoe Lane, Stepsmart
+            City, FTW 45678
+          </p>
+          <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fa-solid fa-envelope"></i> stepsmart@email.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 StepSmart</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
